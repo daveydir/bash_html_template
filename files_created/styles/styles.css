@@ -1,0 +1,8 @@
+* {
+   box-sizing: border-box;
+   padding: 1em;
+}
+
+body {
+   background-color: lightblue;
+}
