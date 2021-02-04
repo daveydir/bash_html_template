@@ -1,0 +1,103 @@
+***************FINAL******************
+echo "Enter: Name of Site Folder" && read SITE && STYLES=styles && SCRIPTS=scripts && IMAGES=images && mkdir $SITE $SITE/$STYLES $SITE/$SCRIPTS $SITE/$IMAGES && printf '<!DOCTYPE html>\n <html lang="en">\n <head>\n     <meta charset="UTF-8">\n     <meta name="viewport" content="width=device-width, initial-scale=1.0">\n     <title>Hello  World</title>\n     <link rel="stylesheet" href="%s/styles.css">\n </head>\n <body>\n      <h1 id="change" onclick="changeColor()">Hello World! Click Me</h1>\n      \n      \n      \n      \n      <script src="%s/scripts.js"></script>\n </body>\n </html>\n' "$STYLES" "$SCRIPTS" > $SITE/index.html && printf '* {\n    box-sizing: border-box;\n    padding: 1em;\n }\n \n body {\n    background-color: lightblue;\n }' > $SITE/$STYLES/styles.css && printf 'function changeColor() {\n             document.getElementById("change").style.color = "lightgreen";\n             document.body.style.backgroundColor = "black";\n             document.getElementById("change").innerHTML = "Your JavaScript works! How neat :)";\n             return false;\n         }\n' > $SITE/$SCRIPTS/scripts.js && code $SITE
+
+
+***************Folders*******************
+
+echo "Enter: Name of Site Folder" && read SITE
+STYLES=styles
+SCRIPTS=scripts
+IMAGES=images
+
+mkdir $SITE $SITE/$STYLES $SITE/$SCRIPTS $SITE/$IMAGES
+
+*****************HTML********************
+
+
+printf '<!DOCTYPE html>\n
+<html lang="en">\n
+<head>\n
+    <meta charset="UTF-8">\n
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n
+    <title>Hello World</title>\n
+    <link rel="stylesheet" href="%s/styles.css">\n
+</head>\n
+<body>\n
+     <h1 id="change" onclick="changeColor()">Hello World! Click Me</h1>\n
+     \n
+     \n
+     \n
+     \n
+     <script src="%s/scripts.js"></script>\n
+</body>\n
+</html>\n' "$STYLES" "$SCRIPTS"
+
+******************CSS****************
+
+printf '* {\n
+   box-sizing: border-box;\n
+   padding: 1em;\n
+}\n
+\n
+body {\n
+   background-color: lightblue;\n
+}'
+
+***********************JS****************************
+
+printf 'function changeColor() {\n
+            document.getElementById("change").style.color = "lightgreen";\n
+            document.body.style.backgroundColor = "black";\n
+            document.getElementById("change").innerHTML = "Your JavaScript works! How neat :)";\n
+            return false;\n
+        }\n'
+
+**************all***********
+echo "Enter: Name of Site Folder" && read SITE
+&&
+STYLES=styles
+&&
+SCRIPTS=scripts
+&&
+IMAGES=images && mkdir $SITE $SITE/$STYLES $SITE/$SCRIPTS $SITE/$IMAGES
+&&
+printf '<!DOCTYPE html>\n
+<html lang="en">\n
+<head>\n
+    <meta charset="UTF-8">\n
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n
+    <title>Hello World</title>\n
+    <link rel="stylesheet" href="%s/styles.css">\n
+</head>\n
+<body>\n
+     <h1 id="change" onclick="changeColor()">Hello World! Click Me</h1>\n
+     \n
+     \n
+     \n
+     \n
+     <script src="%s/scripts.js"></script>\n
+</body>\n
+</html>\n' "$STYLES" "$SCRIPTS" > $SITE/index.html
+&&
+printf '* {\n
+   box-sizing: border-box;\n
+   padding: 1em;\n
+}\n
+\n
+body {\n
+   background-color: lightblue;\n
+}' > $SITE/$STYLES/styles.css
+&&
+printf 'function changeColor() {\n
+            document.getElementById("change").style.color = "lightgreen";\n
+            document.body.style.backgroundColor = "black";\n
+            document.getElementById("change").innerHTML = "Your JavaScript works! How neat :)";\n
+            return false;\n
+        }\n' > $SITE/$SCRIPTS/scripts.js
+&&
+code $SITE
+
+*********************************FOLDERS - HTML - CSS - JS********************************
+
+echo "Enter: Name of Site Folder" && read SITE && STYLES=styles && SCRIPTS=scripts && IMAGES=images && mkdir $SITE $SITE/$STYLES $SITE/$SCRIPTS $SITE/$IMAGES && printf '<!DOCTYPE html>\n <html lang="en">\n <head>\n     <meta charset="UTF-8">\n     <meta name="viewport" content="width=device-width, initial-scale=1.0">\n     <title>Hello  World</title>\n     <link rel="stylesheet" href="%s/styles.css">\n </head>\n <body>\n      <h1 id="change" onclick="changeColor()">Hello World! Click Me</h1>\n      \n      \n      \n      \n      <script src="%s/scripts.js"></script>\n </body>\n </html>\n' "$STYLES" "$SCRIPTS" > $SITE/index.html && printf '* {\n    box-sizing: border-box;\n    padding: 1em;\n }\n \n body {\n    background-color: lightblue;\n }' > $SITE/$STYLES/styles.css && printf 'function changeColor() {\n             document.getElementById("change").style.color = "lightgreen";\n             document.body.style.backgroundColor = "black";\n             document.getElementById("change").innerHTML = "Your JavaScript works! How neat :)";\n             return false;\n         }\n' > $SITE/$SCRIPTS/scripts.js && code $SITE
+
